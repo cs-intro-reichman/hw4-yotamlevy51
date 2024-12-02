@@ -178,6 +178,10 @@ public class ArrCharOps {
         int word1 = str1.length();
         int word2 = str2.length();
         int min = Math.min( word1, word2 );
+
+        if (str1 == null || str2 == null) {
+            return -2;
+        }
     
         for (int i = 0; i < min; i++) {
             char char1 = str1.charAt(i);

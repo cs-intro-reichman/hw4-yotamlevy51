@@ -28,7 +28,7 @@ public class MyString {
         boolean match = false;
         
         if (str2.length() > str1.length()) {
-            return match;
+            return false;
         }
     
         for (int i = 0; i <= str1.length() - str2.length(); i++) {
@@ -41,9 +41,9 @@ public class MyString {
             }
     
             if (match) {
-                match = true;
+                return  true;
             }
         }
-        return match;
+        return false;
     }
 }
