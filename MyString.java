@@ -25,14 +25,13 @@ public class MyString {
 
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
-        boolean match = false;
         
         if (str2.length() > str1.length()) {
             return false;
         }
     
         for (int i = 0; i <= str1.length() - str2.length(); i++) {
-    
+            boolean match = false;
             for (int j = 0; j < str2.length(); j++) {
                 if (str1.charAt(i + j) != str2.charAt(j)) {
                     match = false;  
