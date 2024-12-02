@@ -25,7 +25,7 @@ public class Primes {
         }
 
         
-        int percentage = (primeCount / n) * 100;
-        System.out.println("There are " + primeCount + " primes between 2 and " + n + " (" + percentage + "% are primes)");
+        double percentage = (primeCount / n) * 100;
+        System.out.println("There are " + primeCount + " primes between 2 and " + n + " (" + (int)percentage + "% are primes)");
     }
 }
