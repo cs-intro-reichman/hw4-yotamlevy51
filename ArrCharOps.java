@@ -178,7 +178,7 @@ public class ArrCharOps {
         if (str1 == null || str2 == null) {
             return -2;
         }
-        if (str1.isEmpty() && str2.isEmpty()) {
+        if (str1.length() == 0 && str2.length() == 0) {
             return 0;
         }
         
